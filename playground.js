@@ -31,16 +31,18 @@ function findPassedStudents() {
 * */
 
 const students = [
-    {name:"Dominic", age: 27,mark: 70,course:"Law"},
-    {name:"Franklyn", age: 25,mark: 75,course:"Forensic Sciences"},
-    {name:"Gideon", age: 23,mark: 65,course:"Actuarial Sciences"},
-    {name:"Billy", age: 28,mark: 81,course:"Geology"},
-    {name:"Edward", age: 26,mark: 74,course:"Mechanical Engineering"}
+    {name:"Dominic", age: 27,mark: 73,course:"Law"},
+    {name:"Franklyn", age: 25,mark: 47,course:"Forensic Sciences"},
+    {name:"Gideon", age: 23,mark: 69,course:"Actuarial Sciences"},
+    {name:"Billy", age: 28,mark: 80,course:"Geology"},
+    {name:"Edward", age: 26,mark: 78,course:"Mechanical Engineering"}
 ]
 
 function displayStudents(studentsArray){
     studentsArray.forEach(student => {
-        const {name, mark} = student;
+        // const {name, mark} = student;
+        const name = student.name;
+        const mark = student.mark;
         console.log(`The student's name is ${name}, and their mark is ${mark}.\n`);
     })
 }
